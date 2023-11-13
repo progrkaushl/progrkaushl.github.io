@@ -1,0 +1,13 @@
+<section class="profile">
+    {% for section in site.data.summary %}
+        <div class="profile-items">
+            <div class="profile-name">{{ section.name }}</div>
+            <div class="profile-role">{{ section.role }}</div>
+            <div class="profile-communication">
+                <a href="mailto:{{ section.email }}" class="fa fa-envelope fa-lg"> Email </a>
+                <a href="{{ section.github }}" class="fa fa-github fa-lg">  @progrkaushl </a>
+                <a href="{{ section.linkedin }}" class="fa fa-linkedin fa-lg"> @kaushlendra006 </a>
+            </div>
+        </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,37 @@
+---
+
+# Only the main Sass file needs front matter (the dashes are enough)
+
+---
+
+@import "education";
+@import "employment";
+@import "profile";
+@import "skills";
+@import "certificate";
+@import "accolades";
+
+main {
+    max-width: 864px;
+    margin: 0 auto;
+    padding: 60px 16px 16px 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+hr {
+    opacity: 0.2;
+    color: lightgray;
+}
+
+span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #3D5A80;
+}

@@ -1,0 +1,48 @@
+- role: Senior Software Engineer
+  period: Oct 2022 - Present
+  organization: Impetus Technologies
+  location: Noida, India
+  projects:
+    "AWS EMR to Databricks Migration":
+     - Led a team of 4 developers for seamless migration from AWS EMR to Databricks
+     - Automated code extraction and assessment for over 4000+ scripts, ensuring efficiency and accuracy
+     - Transformed diverse legacy codebases (MapReduce, Hive, Presto, PySpark) to Databricks Spark, showcasing adept data migration skills
+     - Formulated an optimized migration strategy tailored to client requirements
+    "Data Validation Utility":
+     - Integrated BigQuery into a Java-based utility, enhancing data processing capabilities
+     - Implemented a custom Spark Java dialect for precise mapping of BigQuery data types to Java SQL, ensuring data integrity
+     - Improved data quality by implementing functionalities for calculating data mismatches and exporting results to Excel
+     - Addressed and resolved bugs reported during testing, ensuring the reliability of data validation processes
+    "CDP to Azure Databricks Migration":
+      - Migrated on-premise hive, presto and shell scripts batch jobs to Databricks using Notebooks and Workflow
+      - Developed of a streaming pipeline with Kafka, Structured Streaming and Delta Live Tables in Databricks
+      - Successfully integrated Databricks with Azure Purview, demonstrating cross-platform integration skills
+
+
+- role: Data Engineer
+  period: Sep 2018 - Sept 2022
+  organization: Tata Consultancy Services
+  location: Gurgoan, India
+  projects:
+    "BFSI Industry":
+      - Spearheaded India Data Localization efforts for two scrum teams, ensuring compliance with regional data regulations
+      - Established use cases for Big Data projects across Development, Testing, and Production environments
+      - Engineered robust Data/ETL pipelines using Spark, Hive, HDFS, and Python for various processes
+      - Automated processes with Shell Scripting and automation tools, streamlining workflows
+      - Conducted Github code commit and merge, and created XLR templates for efficient production code deployment
+      - Developed an Anomaly Detection pipeline using Python, PySpark, Facebook Prophet, AWS S3, and SkLearn, identifying anomalies in Data Quality and KPI Metrics
+      - Conducted comprehensive data analysis on big data to detect irregularities in data volume and quality
+      - Provided production support, monitoring and resolving issues in ETL jobs for multiple processes
+      - Contributed to screening and managing TCS resources within an Agile Development Environment
+
+- role: Executive, Platform Operations
+  period: Dec 2016 - Aug 2017
+  organization: Enhanced Business Solutions
+  location: Gurgoan, India
+  projects:
+    "Media & Entertainment Industry":
+      - Conducted insightful data analysis for E-Commerce and Content mobile app usage and key metrics tracking using MySQL
+      - Generated weekly app usage and product performance reports for higher management
+      - Collaborated with Engineers to develop impactful product features for short video and content applications
+      - Conducted user analysis to identify pain points, contributing to improved user experiences
+      - Conducted competitor and market research for the Media & Entertainment industry

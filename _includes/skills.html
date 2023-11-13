@@ -1,0 +1,14 @@
+{% for section in blurb %}
+    <div class="category">
+        <span class="title">{{ section.category }} </span>
+        <span class="list">
+        {% if section.primary %}
+            <span class="primary">{{ section.primary | join: ', ' }}</span>
+        {% endif %}
+        {% if section.secondary %}
+            <span>,</span>
+            <span class="secondary">{{ section.secondary | join: ', ' }}</span>
+        {% endif %}
+        </span>
+    </div>
+{% endfor %}

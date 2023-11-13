@@ -1,0 +1,35 @@
+.employment-items {
+
+    .employment {
+
+        margin-bottom: 30px;
+
+        .role-details {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    
+        .org-details {
+            display: flex;
+            justify-content: space-between; 
+            font-weight: 400;
+            font-style: italic;
+            color: gray;   
+        }
+
+        .project-name {
+            font-weight: bold;
+        }
+
+        .project {
+            margin-bottom: 25px;
+        }
+
+        .bullets {
+            padding-left: 30px;
+        }
+
+    }
+}

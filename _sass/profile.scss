@@ -1,0 +1,34 @@
+.profile-items {
+
+    .profile-name {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        margin: 10px 0;
+    }
+
+    .profile-role {
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+        color: #3D5A80;
+        margin: 10px 0;
+    }
+
+    .profile-communication {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline ;
+    }
+
+}

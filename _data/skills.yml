@@ -1,0 +1,45 @@
+- category: Languages
+  primary:
+    - Python
+    - SQL
+    - Shell Script
+  secondary:
+    - Java
+    - Scala
+
+- category: Frameworks
+  primary:
+    - Spark
+    - Hive
+  secondary:
+    - Presto
+    - Kafka
+    - Airflow
+    - NiFi
+
+- category: Databases
+  primary:
+    - MySQL
+    - Postgres
+    - SQLite
+  secondary:
+    - HBase
+    - Redis
+
+- category: Cloud
+  primary:
+    - Google Cloud
+    - Databricks
+  secondary:
+    - AWS
+    - Azure
+
+- category: Tools
+  primary:
+    - Jupyter
+    - Zeppelin
+    - GitHub
+  secondary:
+    - Docker
+    - XL Release
+    - Microsoft Office

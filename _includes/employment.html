@@ -1,0 +1,25 @@
+{% for section in blurb %}
+    <div class="employment">
+        <div class="role-details">
+            <span>{{ section.role }}</span>
+            <span>{{ section.period }}</span>
+        </div>
+        <div class="org-details">
+            <span>{{ section.organization }}</span>
+            <span>{{ section.location }}</span>
+        </div>
+        <div class="project-items">
+            {% for project in section.projects %}
+                <div class="project">
+                    <span class="project-name">{{ project[0] }}</span>
+                    {% assign bullets = project[1] %}
+                    <ul class="bullets">
+                        {% for bullet in bullets %}
+                            <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
