@@ -1,12 +1,22 @@
-<section class="profile">
+<section class="profile fade-in">
     {% for section in site.data.summary %}
         <div class="profile-items">
             <div class="profile-name">{{ section.name }}</div>
             <div class="profile-role">{{ section.role }}</div>
+            <div class="profile-divider"></div>
             <div class="profile-communication">
-                <a href="mailto:{{ section.email }}" class="fa fa-envelope fa-lg"> Email </a>
-                <a href="{{ section.github }}" class="fa fa-github fa-lg">  @progrkaushl </a>
-                <a href="{{ section.linkedin }}" class="fa fa-linkedin fa-lg"> @kaushlendra006 </a>
+                <a href="mailto:{{ section.email }}" class="contact-link">
+                    <i class="fa fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="{{ section.github }}" class="contact-link" target="_blank" rel="noopener">
+                    <i class="fa fa-github"></i>
+                    <span>@progrkaushl</span>
+                </a>
+                <a href="{{ section.linkedin }}" class="contact-link" target="_blank" rel="noopener">
+                    <i class="fa fa-linkedin"></i>
+                    <span>@kaushlendra006</span>
+                </a>
             </div>
         </div>
     {% endfor %}

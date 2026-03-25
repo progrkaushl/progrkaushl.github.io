@@ -4,34 +4,200 @@
 
 ---
 
-@import "education";
-@import "employment";
 @import "profile";
+@import "employment";
 @import "skills";
+@import "education";
 @import "certificate";
 @import "accolades";
 
+// === CSS VARIABLES — "Midnight Copper" palette ===
+:root {
+    --bg-primary: #0B0D11;
+    --bg-secondary: #12141A;
+    --bg-surface: #181B24;
+    --bg-card: #1E212C;
+
+    --text-primary: #EDE9E3;
+    --text-secondary: #908A82;
+    --text-muted: #5E5A55;
+
+    --accent-copper: #C08B5C;
+    --accent-copper-light: #D4A97A;
+    --accent-copper-dim: rgba(192, 139, 92, 0.15);
+    --accent-steel: #5B7FA5;
+    --accent-steel-dim: rgba(91, 127, 165, 0.12);
+
+    --border-subtle: rgba(192, 139, 92, 0.12);
+    --border-accent: rgba(192, 139, 92, 0.35);
+
+    --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-body: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+    --font-mono: 'Fira Code', 'Consolas', monospace;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+// === RESET & BASE ===
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// === GRAIN OVERLAY ===
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+}
+
+// === ANIMATIONS ===
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes accentSlide {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 32px;
+        opacity: 1;
+    }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+// === LAYOUT ===
 main {
-    max-width: 864px;
+    max-width: 920px;
     margin: 0 auto;
-    padding: 60px 16px 16px 16px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 48px 24px 64px;
+    font-family: var(--font-body);
+    position: relative;
 }
 
-section {
-    margin-bottom: 60px;
+.container {
+    position: relative;
 }
 
-hr {
-    opacity: 0.2;
-    color: lightgray;
+// === SECTIONS ===
+section.section {
+    margin-bottom: 48px;
+    padding: 0;
 }
 
-span {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-accent-bar {
+    display: inline-block;
+    width: 32px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-copper), var(--accent-copper-light));
+    border-radius: 2px;
+    animation: accentSlide 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    flex-shrink: 0;
 }
 
 h2 {
-    color: #3D5A80;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-copper);
+    margin: 0;
+}
+
+// === GLOBAL LINK STYLES ===
+a {
+    color: var(--accent-copper-light);
+    text-decoration: none;
+    transition: color 0.25s ease, opacity 0.25s ease;
+
+    &:hover {
+        color: var(--text-primary);
+    }
+}
+
+// === HR (hidden, replaced by section-header border) ===
+hr {
+    display: none;
+}
+
+// === SELECTION ===
+::selection {
+    background: var(--accent-copper);
+    color: var(--bg-primary);
+}
+
+// === SCROLLBAR ===
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-copper-dim);
+    border-radius: 3px;
+}
+
+// === RESPONSIVE ===
+@media (max-width: 640px) {
+    main {
+        padding: 32px 16px 48px;
+    }
+
+    .section-header {
+        gap: 10px;
+    }
 }

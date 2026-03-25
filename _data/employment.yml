@@ -1,48 +1,66 @@
+- role: Senior Data Engineer
+  period: Sep 2024 – Present
+  organization: Precisely
+  location: Noida, India
+  projects:
+    "DataLink — Data Pipeline Architecture":
+      - Designed technical architecture and built production-grade data pipelines for multiple vendor datasets using Databricks, AWS EMR, Step Functions, S3, and Delta Lake, enabling scalable and reliable data ingestion at enterprise scale
+    "Master Data Changelog — Data Warehousing Framework":
+      - Architected a unified framework for master ACDO data processing, maintaining incremental changelogs per vintage using hash-based comparison — ensuring idempotent and auditable data processing across vendors
+      - Orchestrated pipeline automation using Apache Airflow, processing data through EMR/Spark and loading into Amazon Redshift for warehousing and analytics consumption
+      - Built a single, vendor-agnostic framework handling diverse data sources, reducing development overhead and standardizing data processing patterns
+    "Attributes Predictor — ML Solution":
+      - Developed an ML-based prediction system using CatBoost and Scikit-Learn for imputing missing and correcting incorrect values in property attributes, improving downstream data quality
+      - Engineered a highly configurable single framework (INI-driven) supporting both Regression and Classification model training and inference, with Polars for high-performance data processing
+    "Scoring Project — Analytics Framework":
+      - Created a scoring framework calculating property-level scores across multiple datasets, using Athena, Airflow, Python, and S3 with Apache Iceberg for efficient table management and time-travel queries
+    "Document QA — GenAI / RAG System":
+      - Built a production-grade RAG system with hybrid search (FAISS + BM25 + Reciprocal Rank Fusion) and a multi-agent orchestration layer (factual, multi-doc, code, table, and external API agents)
+      - Implemented structure-aware document ingestion via Docling REST and tree-sitter, with a validation pipeline (Gatekeeper → Auditor → Strategist) and automatic re-retrieval on low-confidence responses
+
 - role: Senior Software Engineer
-  period: Oct 2022 - Present
+  period: Oct 2022 – Aug 2024
   organization: Impetus Technologies
   location: Noida, India
   projects:
-    "AWS EMR to Databricks Migration":
-     - Led a team of 4 developers for seamless migration from AWS EMR to Databricks
-     - Automated code extraction and assessment for over 4000+ scripts, ensuring efficiency and accuracy
-     - Transformed diverse legacy codebases (MapReduce, Hive, Presto, PySpark) to Databricks Spark, showcasing adept data migration skills
-     - Formulated an optimized migration strategy tailored to client requirements
-    "Data Validation Utility":
-     - Integrated BigQuery into a Java-based utility, enhancing data processing capabilities
-     - Implemented a custom Spark Java dialect for precise mapping of BigQuery data types to Java SQL, ensuring data integrity
-     - Improved data quality by implementing functionalities for calculating data mismatches and exporting results to Excel
-     - Addressed and resolved bugs reported during testing, ensuring the reliability of data validation processes
+    "AWS EMR to Azure Databricks Migration":
+      - Led a team of 4 engineers migrating 4,000+ production data pipelines from AWS EMR to Azure Databricks with zero data loss and minimal downtime
+      - Automated code extraction, assessment, and conversion of legacy codebases (MapReduce, Hive, Presto, PySpark) to optimized Databricks Spark (Python/SQL), standardizing on Delta Lake
+      - Designed optimized Delta Lake tables with partitioning, Z-ordering, and compaction strategies, reducing query execution time and storage costs
+      - Rewrote complex Hive and Presto SQL into high-performance Spark SQL, leveraging window functions, CTEs, complex joins, and large-scale aggregations
+      - Mentored junior data engineers on Databricks best practices, Spark tuning, and Delta Lake optimization techniques
+    "Data Validation & Quality Framework":
+      - Built a scalable data quality validation framework in Java and Spark, integrating BigQuery for cross-platform data validation across cloud environments
+      - Implemented a custom Spark Java dialect for precise mapping of BigQuery data types to Java SQL, ensuring data integrity and type fidelity
+      - Developed automated data mismatch detection, reconciliation reporting, and monitoring dashboards, ensuring trusted analytics metrics
     "CDP to Azure Databricks Migration":
-      - Migrated on-premise hive, presto and shell scripts batch jobs to Databricks using Notebooks and Workflow
-      - Developed of a streaming pipeline with Kafka, Structured Streaming and Delta Live Tables in Databricks
-      - Successfully integrated Databricks with Azure Purview, demonstrating cross-platform integration skills
-
+      - Migrated on-premise Hive, Presto, and Shell script batch jobs to Azure Databricks using Notebooks and Workflows, implementing MERGE patterns on Delta Lake for upsert operations
+      - Developed a near-real-time streaming pipeline using Kafka, Spark Structured Streaming, and Delta Live Tables (DLT)
+      - Integrated Databricks with Azure Purview for enterprise data governance, lineage tracking, and access controls
+      - Designed gold layer analytics tables (rollups, metric layers, aggregated views) optimized for BI consumption and product analytics dashboards
 
 - role: Data Engineer
-  period: Sep 2018 - Sept 2022
+  period: Sep 2018 – Sep 2022
   organization: Tata Consultancy Services
-  location: Gurgoan, India
+  location: Gurugram, India
   projects:
-    "BFSI Industry":
-      - Spearheaded India Data Localization efforts for two scrum teams, ensuring compliance with regional data regulations
-      - Established use cases for Big Data projects across Development, Testing, and Production environments
-      - Engineered robust Data/ETL pipelines using Spark, Hive, HDFS, and Python for various processes
-      - Automated processes with Shell Scripting and automation tools, streamlining workflows
-      - Conducted Github code commit and merge, and created XLR templates for efficient production code deployment
-      - Developed an Anomaly Detection pipeline using Python, PySpark, Facebook Prophet, AWS S3, and SkLearn, identifying anomalies in Data Quality and KPI Metrics
-      - Conducted comprehensive data analysis on big data to detect irregularities in data volume and quality
-      - Provided production support, monitoring and resolving issues in ETL jobs for multiple processes
-      - Contributed to screening and managing TCS resources within an Agile Development Environment
+    "BFSI Industry — Analytics & Data Engineering":
+      - Spearheaded India Data Localization initiative across two Agile scrum teams, designing compliant data pipelines adhering to regional data governance regulations
+      - Engineered production-grade ETL/ELT pipelines using Spark, Hive, HDFS, and Python, processing large-scale financial datasets for analytics and reporting
+      - Designed and maintained analytics-ready data models including fact tables, dimension tables, and aggregated rollups, enabling self-serve analytics for business analysts
+      - Developed an Anomaly Detection pipeline using Python, PySpark, Facebook Prophet, and Scikit-Learn on AWS S3, identifying anomalies in data quality metrics and business KPIs
+      - Automated operational workflows using Shell Scripting, improving pipeline reliability and reducing manual intervention by 40%
+      - Managed version-controlled deployments via GitHub and created XLR release templates for streamlined production releases with full audit trails
+      - Provided production support and SLA-based monitoring for critical ETL jobs across multiple business processes
 
 - role: Executive, Platform Operations
-  period: Dec 2016 - Aug 2017
+  period: Dec 2016 – Aug 2017
   organization: Enhanced Business Solutions
-  location: Gurgoan, India
+  location: Gurugram, India
   projects:
-    "Media & Entertainment Industry":
-      - Conducted insightful data analysis for E-Commerce and Content mobile app usage and key metrics tracking using MySQL
-      - Generated weekly app usage and product performance reports for higher management
-      - Collaborated with Engineers to develop impactful product features for short video and content applications
-      - Conducted user analysis to identify pain points, contributing to improved user experiences
+    "Media & Entertainment Industry — Product Analytics":
+      - Conducted product analytics and feature adoption analysis for mobile applications, tracking MAU, DAU, retention, and engagement metrics using complex MySQL queries
+      - Generated weekly analytics reports on app usage and product performance for senior management, enabling data-driven product decisions
+      - Collaborated with product and engineering teams to define product-led growth metrics, contributing to feature prioritization based on user behavior insights
+      - Performed user segmentation analysis to identify pain points and drop-off patterns, directly improving user experiences
       - Conducted competitor and market research for the Media & Entertainment industry

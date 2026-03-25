@@ -1,13 +1,44 @@
+// === EDUCATION SECTION ===
 .education-items {
-    .flex {
+    .edu-item {
+        padding: 16px 0;
+        border-bottom: 1px solid var(--border-subtle);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .edu-header {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
 
-        font-weight: bold;
-        font-size: 20px;
+        .title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--text-primary);
+        }
+
+        .period {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent-copper);
+        }
     }
 
     .school {
-        color: gray;
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        font-style: italic;
+    }
+}
+
+@media (max-width: 640px) {
+    .education-items .edu-header {
+        flex-direction: column;
+        gap: 2px;
     }
 }

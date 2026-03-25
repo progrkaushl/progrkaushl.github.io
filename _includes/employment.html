@@ -1,12 +1,14 @@
 {% for section in blurb %}
     <div class="employment">
-        <div class="role-details">
-            <span>{{ section.role }}</span>
-            <span>{{ section.period }}</span>
-        </div>
-        <div class="org-details">
-            <span>{{ section.organization }}</span>
-            <span>{{ section.location }}</span>
+        <div class="role-header">
+            <div class="role-details">
+                <span class="role-title">{{ section.role }}</span>
+                <span class="role-period">{{ section.period }}</span>
+            </div>
+            <div class="org-details">
+                <span class="org-name">{{ section.organization }}</span>
+                <span class="org-location">{{ section.location }}</span>
+            </div>
         </div>
         <div class="project-items">
             {% for project in section.projects %}
