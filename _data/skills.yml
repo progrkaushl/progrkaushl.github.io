@@ -4,25 +4,26 @@
     - SQL
     - Shell Script
   secondary:
-    - Java
-    - Scala
+    - JavaScript
+    - Rust
 
 - category: Frameworks
   primary:
     - Spark
     - Hive
     - Delta Lake
+    - Airflow
   secondary:
     - Kafka
-    - Airflow
-    - Presto
     - Apache Iceberg
 
 - category: ML / AI
   primary:
     - Scikit-Learn
     - CatBoost
+    - Pandas
     - Polars
+    - Streamlit
   secondary:
     - FAISS
     - LangChain
@@ -31,10 +32,10 @@
 - category: Databases
   primary:
     - Amazon Redshift
-    - MySQL
+    - Hive
     - Postgres
   secondary:
-    - HBase
+    - MySQL
     - Redis
     - Athena
 
@@ -45,8 +46,6 @@
     - Azure
   secondary:
     - Google Cloud
-    - EMR
-    - Step Functions
 
 - category: Tools
   primary:
