@@ -1,6 +1,34 @@
+// === ACCOLADES SECTION ===
 .accolades-items {
     .accolade {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--border-subtle);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .accolade-title {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .accolade-date {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent-copper);
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .accolades-items .accolade {
+        flex-direction: column;
+        gap: 4px;
     }
 }

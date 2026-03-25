@@ -11,35 +11,49 @@
   primary:
     - Spark
     - Hive
+    - Delta Lake
   secondary:
-    - Presto
     - Kafka
     - Airflow
-    - NiFi
+    - Presto
+    - Apache Iceberg
+
+- category: ML / AI
+  primary:
+    - Scikit-Learn
+    - CatBoost
+    - Polars
+  secondary:
+    - FAISS
+    - LangChain
+    - RAG Pipelines
 
 - category: Databases
   primary:
+    - Amazon Redshift
     - MySQL
     - Postgres
-    - SQLite
   secondary:
     - HBase
     - Redis
+    - Athena
 
-- category: Cloud
+- category: Cloud & Platforms
   primary:
-    - Google Cloud
-    - Databricks
-  secondary:
     - AWS
+    - Databricks
     - Azure
+  secondary:
+    - Google Cloud
+    - EMR
+    - Step Functions
 
 - category: Tools
   primary:
-    - Jupyter
-    - Zeppelin
     - GitHub
-  secondary:
     - Docker
+    - Jupyter
+  secondary:
+    - Zeppelin
     - XL Release
-    - Microsoft Office
+    - Docling

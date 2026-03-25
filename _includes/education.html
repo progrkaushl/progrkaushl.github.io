@@ -1,7 +1,9 @@
 {% for section in blurb %}
-    <div class="flex">
-        <span class="title">{{ section.title }}</span>
-        <span class="period">{{ section.period }}</span>
+    <div class="edu-item">
+        <div class="edu-header">
+            <span class="title">{{ section.title }}</span>
+            <span class="period">{{ section.period }}</span>
+        </div>
+        <span class="school">{{ section.school }}</span>
     </div>
-    <span class="school">{{ section.school }}</span>
 {% endfor %}
