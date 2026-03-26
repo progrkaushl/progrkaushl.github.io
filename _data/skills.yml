@@ -22,12 +22,12 @@
     - Scikit-Learn
     - CatBoost
     - Pandas
-    - Polars
     - Streamlit
   secondary:
     - FAISS
     - LangChain
-    - RAG Pipelines
+    - AgenticAI
+    - GenAI
 
 - category: Databases
   primary:
