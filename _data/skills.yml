@@ -4,8 +4,8 @@
     - SQL
     - Shell Script
   secondary:
-    - JavaScript
     - Rust
+    - JavaScript
 
 - category: Frameworks
   primary:
@@ -13,31 +13,34 @@
     - Hive
     - Delta Lake
     - Airflow
+    - Streamlit
   secondary:
     - Kafka
-    - Apache Iceberg
+    - Iceberg
 
 - category: ML / AI
   primary:
     - Scikit-Learn
     - CatBoost
     - Pandas
-    - Streamlit
+    - Prophet
   secondary:
-    - FAISS
+    - Chroma DB
     - LangChain
-    - AgenticAI
+    - Agent
     - GenAI
 
 - category: Databases
   primary:
-    - Amazon Redshift
-    - Hive
-    - Postgres
+    - AWS Redshift
+    - AWS Athena
+    - Apache Hive
   secondary:
+    - BigQuery
+    - PostgreSQL
     - MySQL
     - Redis
-    - Athena
+
 
 - category: Cloud & Platforms
   primary:
@@ -46,6 +49,7 @@
     - Azure
   secondary:
     - Google Cloud
+    - Snowflake
 
 - category: Tools
   primary:
@@ -53,6 +57,4 @@
     - Docker
     - Jupyter
   secondary:
-    - Zeppelin
-    - XL Release
     - Docling
