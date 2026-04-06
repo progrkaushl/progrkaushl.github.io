@@ -23,10 +23,10 @@
     - Scikit-Learn
     - CatBoost
     - Pandas
-    - Prophet
-  secondary:
-    - Chroma DB
     - LangChain
+  secondary:
+    - Prophet
+    - Chroma DB
     - Agent
     - GenAI
 
